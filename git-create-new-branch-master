@@ -1,0 +1,22 @@
+Create new branch from a "dev/master" branch
+
+## from the master branch crete a dev branch 
+git checkout master
+git checkout -b dev master
+
+## from the master branch crete a feacture branch and ticket assigned
+git checkout master
+git checkout -b feature/161053927 master
+
+
+## from the dev branch create a feacture branch and ticket assigned
+git checkout dev
+git checkout -b feature/161053927 dev 
+
+## merge feature branch into target dev branch
+git checkout dev;
+git pull origin dev;
+commitmessage="Merge branch feature '161053927' into 'dev'. Get all updated code from 'feature' branch into 'dev' branch";
+git merge dev --no-ff --no-edit -m "$commitmessage";
+git push origin dev;
+
