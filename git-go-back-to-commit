@@ -1,5 +1,7 @@
 #Go back to a commit 
 
+THIS IS WILL GO BACK TO A COMMIT "a08f2c8..." AND THE COMMITS AFTER "a08f2c8..." WILL DISAPEAR!!!
+
 git checkout master
 git reset a08f2c894fa6b05626d6fd8ef0524f2f1dce7f56
 git push origin master --force
