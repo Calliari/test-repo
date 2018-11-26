@@ -1,0 +1,11 @@
+git checkout stage
+git merge -s ours --no-commit master
+git commit -m 'Overwrite "master" with "stage" branch'  # Add a message regarding the replacement that you just did
+git checkout master
+git merge stage
+
+# Push the merge updates
+
+git push origin master
+# or
+git push origin master --force
