@@ -1,0 +1,7 @@
+git checkout feature/1234-deploy
+git pull origin feature/1234-deploy
+git checkout master
+git pull origin master
+commitmessage="Merge branch feature 'feature/1234-deploy' into 'master'. commits day 'Jul 12 - 2017' and 'Jul 25 - 2017'";
+git merge feature/1234-deploy --no-ff --no-edit -m "$commitmessage";
+git push origin master
