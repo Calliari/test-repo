@@ -1,0 +1,15 @@
+# get a particular commit ID to a branch (git cherry-pick)
+
+git checkout dev 
+git add .gitignore
+commitmessage="Add changes to  .gitignore file ";
+git commmit -m "$commitmessage"
+git push origin dev
+
+git checkout stage
+git cherry-pick yrujff56568bdb8f88c557efcb29fca164747y4h
+git push origin stage
+
+git checkout master
+git cherry-pick yrujff56568bdb8f88c557efcb29fca164747y4h
+git push origin master
