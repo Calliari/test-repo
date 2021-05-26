@@ -6,10 +6,12 @@ git stash save --include-untracked
 #Git stash with message
 git stash save “Your stash message”.
 
+
 git stash
 git stash list
 git stash show stash@{0}
 git stash show -p
+
 
 ##Creating a Branch from a Stash
 # git stash branch <name> stash@{0}
